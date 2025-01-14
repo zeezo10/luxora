@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
 import LoginNav from "@/app/component/LoginNav";
+import NavBar from "../component/NavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,11 +17,11 @@ export default function AuthLayout({
   children: React.ReactNode;
 }>) {
   return (
-<>
-{/* <LoginNav /> */}
+<div className="bg-[#1d1c18]">
+<NavBar/>
 {children}
 
-</>
+</div>
       
   );
 }

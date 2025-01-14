@@ -1,0 +1,33 @@
+[
+    {
+      "head": "Impressionism",
+      "description": "A 19th-century art movement characterized by small, thin brush strokes and an emphasis on light and movement.",
+      "photo":"https://zohobrand.com/cdn/shop/files/IMG_2505.jpg?v=1719455609"
+    },
+    {
+      "head": "Surrealism",
+      "description": "An artistic style focusing on the imaginative and the subconscious, often featuring dream-like scenes and unexpected juxtapositions.",
+      "photo":"https://zohobrand.com/cdn/shop/files/DSC04854.jpg?v=1730053708"
+    },
+    {
+      "head": "Cubism",
+      "description": "An early 20th-century art movement pioneered by Picasso and Braque, using geometric shapes to represent forms from multiple perspectives.",
+      "photo":"https://zohobrand.com/cdn/shop/files/Kz5nS1zQ.jpg?v=1720651845"
+    },
+    {
+      "head": "Abstract Expressionism",
+      "description": "A post-World War II art movement in America focused on spontaneous, automatic, or subconscious creation, often with bold colors and gestures.",
+      "photo":"https://zohobrand.com/cdn/shop/files/W3WS44Ow.jpg?v=1720647014"
+    },
+    {
+      "head": "Renaissance Art",
+      "description": "An era from the 14th to the 17th century known for its focus on classical techniques, realism, and humanism, exemplified by artists like Leonardo da Vinci and Michelangelo.",
+      "photo":"https://zohobrand.com/cdn/shop/files/nIQx9DNg.jpg?v=1720647332"
+    },
+    {
+      "head": "Pop Art",
+      "description": "A 20th-century art movement drawing from popular and commercial culture, featuring bold colors and images of mass-media objects, led by artists like Andy Warhol.",
+      "photo":"https://zohobrand.com/cdn/shop/files/DSC05330.jpg?v=1730053901"
+    }
+  ]
+  

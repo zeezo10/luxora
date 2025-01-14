@@ -51,11 +51,15 @@ export default function WishlistCard({props}:WishlistCardProps ) {
     };
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-      <a href="#">
-        <img className="rounded-t-lg" src={`${wishProduct.productDetails.thumbnail}`} alt="" />
-      </a>
-      <div className="p-5">
+    <div className="border-t-[1px] border-b-[1px] w-full flex h-36 justify-between items-center p-5">
+      <div className="bg-slate-500 h-full w-20"
+      
+      style={{ backgroundImage: `url(${wishProduct.productDetails.thumbnail})`, backgroundSize: 'cover' }}
+      >
+        {/* <img className="h-full bg-cover" src={`${wishProduct.productDetails.thumbnail}`} alt="" /> */}
+      </div>
+
+    
         <a href="#">
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {wishProduct.productDetails.name}
@@ -66,16 +70,15 @@ export default function WishlistCard({props}:WishlistCardProps ) {
         </p>
        
         <button
-          className="inline-flex items-center px-3 py-2 text-sm font-medium text-center bg-red-400 text-white  rounded-lg  focus:ring-4 focus:outline-none "
+          className="inline-flex h-1/2 items-center text-sm px-5 font-medium text-center bg-red-400 text-white  rounded-lg"
           onClick={(e) => {
             e.preventDefault()
             handleDelWishlst(wishProduct._id)
         }}
         >
-          delete
+          Delete
        
         </button>
       </div>
-    </div>
   );
 }

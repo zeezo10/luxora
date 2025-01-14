@@ -16,5 +16,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <main >{children}</main>;
+  return <main className="bg-[#1d1c18] min-h-screen">
+    <NavBar/>
+    {children}</main>;
 }
