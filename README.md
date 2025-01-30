@@ -1,53 +1,110 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15626836&assignment_repo_type=AssignmentRepo)
-# My eCommerce App
+# Luxora E-Commerce
 
-## Tujuan Pembelajaran
+A modern e-commerce platform built with Next.js, TypeScript, and MongoDB.
 
-- Student mampu membuat aplikasi server dengan menggunakan menggunakan Typescript, NEXT.js dan melakukan proses CRUD dengan database MongoDB
-- Student mampu membuat web aplikasi dengan menggunakan framework NEXT.js
-- Student mampu menghandle navigasi pada NEXT.js
-- Student mampu menghandle authentikasi pada NEXT.js
-- Student mampu mengimplementasikan CSR & SSR pada NEXT.js
+## Prerequisites
 
-## Aturan Umum
+Before running this project, make sure you have:
 
-Challenge Hacktiv8 bersifat latihan WAJIB yang menjunjung tinggi INTEGRITAS. Segala bentuk ketidakjujuran meliputi peniruan, plagiarisme, pemalsuan pengerjaan akan mendapatkan tindakan tegas dari akademik.
+- Node.js (v18 or higher)
+- MongoDB installed and running
+- npm or yarn package manager
 
-Untuk melatih best practice di lapangan kerja, student diharuskan untuk melakukan git commit minimal 1 hari 4 kali dengan message yang deskriptif atau commit message yang sesuai
+## Environment Variables
 
-## Ringkasan
+Create a `.env.local` file in the root directory with the following variables:
 
-My eCommerce App adalah sebuah web aplikasi yang dibangun menguunakan Typescript , framework NEXT.js dan database MongoDB, jadi kerjakan dengan baik sebagai bekal portofolio kamu.
+```
+env
 
-Pada challenge ini, kamu diminta untuk membuat aplikasi client-server dengan detail sebagai berikut:
+DATABASE_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+NEXT_PUBLIC_BASE_URL=http://localhost:3000
+```
 
-### Halaman
 
-- [ ] Halaman Register
-- [ ] Halaman Login
-- [ ] Halaman Home
-  - [ ] Banner Promo
-  - [ ] Detail info Ecommerce
-  - [ ] Featured Product (5-10 product) + “see-all”
-- [ ] Halaman Product
-- [ ] List Product
-  - [ ] Fitur Search
-  - [ ] Fitur Pagination (menggunakan infinite scroll)
-  - [ ] Fitur Add to wishlist
-- [ ] Halaman Detail Product
-  - [ ] Fitur Add to wishlist
-  - [ ] Implementasi Meta Tag di Head sesuai detail product
-- [ ] Halaman Wishlist Product
-  - [ ] List Wishlist
-  - [ ] Fitur Remove Wishlist
+## Installation
 
-### Fitur
+1. Clone the repository:
+```
+bash
 
-- [ ] Fitur register
-- [ ] Fitur login
-- [ ] Fitur show list product
-- [ ] Fitur show detail product
-- [ ] Fitur add to wishlist
-- [ ] Fitur remove wishlist
-- [ ] Fitur search product berdasarkan nama (implement menerapkan debounce)
-- [ ] Fitur pagination (implement infinite scroll)
+git clone <repository-url>
+cd my-app
+```
+
+2. Install dependencies:
+
+```
+bash
+npm install
+or
+yarn install
+```
+
+
+3. Run the development server:
+```
+bash
+
+npm run dev
+or
+yarn dev
+```
+
+
+
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Features
+
+- User authentication (Register/Login)
+- Product listing with infinite scroll
+- Product search functionality
+- Wishlist management
+- Responsive design
+- Server-side rendering
+- Dynamic routing
+
+## Tech Stack
+
+- Next.js 14
+- TypeScript
+- MongoDB
+- Tailwind CSS
+- DaisyUI
+- Redux Toolkit
+- JWT Authentication
+- Swiper.js
+- React Infinite Scroll
+
+## Project Structure
+
+my-app/
+├── src/
+│ ├── app/ # Next.js app directory
+│ ├── components/ # Reusable components
+│ ├── db/ # Database models and configuration
+│ ├── redux/ # Redux store and slices
+│ ├── helper/ # Helper functions
+│ └── types/ # TypeScript type definitions
+├── public/ # Static files
+└── ...config files
+
+
+
+## API Routes
+
+- `/api/users/register` - User registration
+- `/api/users/login` - User authentication
+- `/api/products` - Product listing and search
+- `/api/wishlist` - Wishlist management
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
